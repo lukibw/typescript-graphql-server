@@ -59,7 +59,6 @@ export class BookResolver {
       throw new Error("Author does not exist");
     }
     const book = new Book();
-    book.author = author;
     book.authorId = authorId;
     if (title) book.title = title;
     if (pages) book.pages = pages;
